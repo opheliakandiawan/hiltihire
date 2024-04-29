@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 import { Link /* useNavigate */ } from 'react-router-dom';
-import Logo from '../Icons/logo.svg';
+import Logo from '../../Icons/logo.svg';
 import { Button } from '@mui/material';
-import PlatformReusableStyles from '../Style/PlatformReusableStyles';
+import PlatformReusableStyles from '../../Style/PlatformReusableStyles';
 
 const RootContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem;
 `;
 
 const AuthContainer = styled.div`
@@ -31,7 +30,9 @@ export default function CustomerHeader() {
                 />
             </Link>
             <AuthContainer>
-                <Button style={{ ...PlatformReusableStyles.SecondaryButtonStyles }}>Log In</Button>
+                <Link to="/">
+                    <Button style={{ ...PlatformReusableStyles.SecondaryButtonStyles }}>Log In</Button>
+                </Link>
                 <Button style={{ ...PlatformReusableStyles.PrimaryButtonStyles }}>Sign Up</Button>
             </AuthContainer>
         </RootContainer>
