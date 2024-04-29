@@ -4,7 +4,7 @@ import Status from '../Screens/Status';
 const StatusScreens = (
     <>
         <Route
-            path="/status"
+            path="/candidate/status"
             element={<Status />}
         />
     </>

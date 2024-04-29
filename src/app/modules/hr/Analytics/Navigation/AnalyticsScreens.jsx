@@ -4,7 +4,7 @@ import Analytics from '../Screens/Analytics';
 const AnalyticsScreens = (
     <>
         <Route
-            path="/analytics"
+            path="/hr/analytics"
             element={<Analytics />}
         />
     </>

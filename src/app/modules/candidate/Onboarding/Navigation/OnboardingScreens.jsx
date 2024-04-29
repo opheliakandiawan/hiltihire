@@ -4,7 +4,7 @@ import Onboarding from '../Screens/Onboarding';
 const OnboardingScreens = (
     <>
         <Route
-            path="/onboarding"
+            path="/candidate/onboarding"
             element={<Onboarding />}
         />
     </>

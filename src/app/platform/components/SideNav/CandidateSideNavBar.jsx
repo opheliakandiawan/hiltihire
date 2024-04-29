@@ -41,25 +41,25 @@ export default function CandidateSideNavBar() {
     return (
         <NavLinkContainer>
             <StyledNavLink
-                to="/careers"
+                to="/candidate/careers"
                 style={NavLinkUtils.activeStyleWithFontWeight}
             >
                 Careers
             </StyledNavLink>
             <StyledNavLink
-                to="/status"
+                to="/candidate/status"
                 style={NavLinkUtils.activeStyleWithFontWeight}
             >
                 Status
             </StyledNavLink>
             <StyledNavLink
-                to="/onboarding"
+                to="/candidate/onboarding"
                 style={NavLinkUtils.activeStyleWithFontWeight}
             >
                 Onboarding
             </StyledNavLink>
             <StyledNavLink
-                to="/feedback"
+                to="/candidate/feedback"
                 style={NavLinkUtils.activeStyleWithFontWeight}
             >
                 Feedback

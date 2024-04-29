@@ -4,7 +4,7 @@ import Careers from '../Screens/Careers';
 const CareersScreens = (
     <>
         <Route
-            path="/careers"
+            path="/candidate/careers"
             element={<Careers />}
         />
     </>
