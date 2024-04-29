@@ -4,7 +4,7 @@ import Feedback from '../Screens/Feedback';
 const FeedbackScreens = (
     <>
         <Route
-            path="/feedback"
+            path="/candidate/feedback"
             element={<Feedback />}
         />
     </>

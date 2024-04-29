@@ -4,7 +4,7 @@ import Candidates from '../Screens/Candidates';
 const CandidatesScreens = (
     <>
         <Route
-            path="/candidates"
+            path="/hr/candidates"
             element={<Candidates />}
         />
     </>

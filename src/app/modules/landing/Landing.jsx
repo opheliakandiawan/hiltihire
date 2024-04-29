@@ -23,12 +23,11 @@ export default function Landing() {
             <StyledDiv>
                 <p>Log In as</p>
                 <ButtonsDiv>
-                    <Link to="/careers">
+                    <Link to="/candidate/careers">
                         <Button style={PlatformReusableStyles.PrimaryButtonStyles}>Candidate</Button>
                     </Link>
 
-                    {/* TODO: Link to HR page */}
-                    <Link to="/candidates">
+                    <Link to="/hr/candidates">
                         <Button style={PlatformReusableStyles.SecondaryButtonStyles}>HR</Button>
                     </Link>
                 </ButtonsDiv>

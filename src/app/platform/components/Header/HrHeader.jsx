@@ -29,7 +29,9 @@ export default function HrHeader() {
                 />
             </Link>
             <AuthContainer>
-                <Button style={{ ...PlatformReusableStyles.PrimaryButtonStyles }}>Sign Out</Button>
+                <Link to="/">
+                    <Button style={{ ...PlatformReusableStyles.PrimaryButtonStyles }}>Sign Out</Button>
+                </Link>
             </AuthContainer>
         </RootContainer>
     );

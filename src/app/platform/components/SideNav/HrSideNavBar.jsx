@@ -41,13 +41,13 @@ export default function HrSideNavBar() {
     return (
         <NavLinkContainer>
             <StyledNavLink
-                to="/candidates"
+                to="/hr/candidates"
                 style={NavLinkUtils.activeStyleWithFontWeight}
             >
                 Candidates
             </StyledNavLink>
             <StyledNavLink
-                to="/analytics"
+                to="/hr/analytics"
                 style={NavLinkUtils.activeStyleWithFontWeight}
             >
                 Analytics
