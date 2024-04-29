@@ -29,7 +29,7 @@ const StyledNavLink = styled(NavLink)`
     }
 
     &:hover {
-        background-color: ${COLORS.lightGrey}; /* Change background color on hover */
+        background-color: ${COLORS.lightGrey};
     }
 
     &:hover:after {
@@ -37,7 +37,7 @@ const StyledNavLink = styled(NavLink)`
     }
 `;
 
-export default function SideNavLink() {
+export default function CandidateSideNavBar() {
     return (
         <NavLinkContainer>
             <StyledNavLink
