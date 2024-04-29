@@ -28,7 +28,9 @@ export default function Landing() {
                     </Link>
 
                     {/* TODO: Link to HR page */}
-                    <Button style={PlatformReusableStyles.SecondaryButtonStyles}>HR</Button>
+                    <Link to="/candidates">
+                        <Button style={PlatformReusableStyles.SecondaryButtonStyles}>HR</Button>
+                    </Link>
                 </ButtonsDiv>
             </StyledDiv>
         </div>
