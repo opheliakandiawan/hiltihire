@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link /* useNavigate */ } from 'react-router-dom';
-import Logo from '../Icons/logo.svg';
+import Logo from '../../Icons/logo.svg';
 import { Button } from '@mui/material';
 import PlatformReusableStyles from '../Style/PlatformReusableStyles';
 
