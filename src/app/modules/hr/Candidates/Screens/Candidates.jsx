@@ -2,7 +2,7 @@
 
 import FONTWEIGHT from '../../../../platform/Style/FontWeight';
 import styled from 'styled-components';
-
+import { assets } from '../../../../platform/assets/assets';
 const StyledText = styled.p`
     font-weight: ${FONTWEIGHT.BOLD};
 `;
@@ -15,6 +15,10 @@ export default function Candidates() {
     return (
         <StyledDiv>
             <StyledText>Vinnie Tiang Wen Ying</StyledText>
+            <img
+                src={assets.vinnie_photo}
+                alt=""
+            />
         </StyledDiv>
     );
 }
