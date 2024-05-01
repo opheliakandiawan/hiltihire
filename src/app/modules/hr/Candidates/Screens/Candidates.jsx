@@ -15,12 +15,8 @@ export default function Candidates() {
         <StyledDiv>
             <SearchField />
             <Card>
-                <CardMedia>
-
-                </CardMedia>
-                <CardContent>
-
-                </CardMedia>
+                <CardMedia></CardMedia>
+                <CardContent></CardContent>
             </Card>
         </StyledDiv>
     );
