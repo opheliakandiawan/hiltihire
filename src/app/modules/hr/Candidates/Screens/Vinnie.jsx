@@ -50,13 +50,50 @@ const ButtonsDiv = styled.div`
     display: flex;
     flex-grow: 1;
     gap: 2rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 `;
 
 const StyledButton = styled(Button)`
     flex-grow: 1; /* Make the buttons fill the available horizontal space */
 `;
 
+const StyledTitle = styled.p`
+    color: white;
+    font-weight: ${FONTWEIGHT.BOLD};
+`;
+
+const StyledWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+`;
+
+const StyledContainer = styled.div`
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 10px;
+`;
+
+const StyledInfoTitle = styled.p`
+    font-weight: ${FONTWEIGHT.BOLD};
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+`;
+const StyledGrid = styled.div`
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+`;
+
+const InfoWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
 export default function Candidates() {
     return (
         <div>
@@ -92,6 +129,76 @@ export default function Candidates() {
                     <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>Interview</StyledButton>
                     <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>AI Reports</StyledButton>
                 </ButtonsDiv>
+            </StyledDiv>
+            <StyledDiv>
+                <StyledWrapper>
+                    <StyledContainer>
+                        <StyledTitle>Personal Information</StyledTitle>
+                    </StyledContainer>
+                    <InfoWrapper>
+                        <StyledInfoTitle>NAME :</StyledInfoTitle>
+                        <SubText>Vinnie Tiang Wen Ying</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>EMAIL :</StyledInfoTitle>
+                        <SubText>vinnieying223@gmail.com</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>CONTACT :</StyledInfoTitle>
+                        <SubText>+601155093081</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>DOB :</StyledInfoTitle>
+                        <SubText>23 FEBRUARY 2003</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>PROFESSION :</StyledInfoTitle>
+                        <SubText>UI/UX Designer</SubText>
+                    </InfoWrapper>
+                    <StyledContainer>
+                        <StyledTitle>Working Experience</StyledTitle>
+                    </StyledContainer>
+                    <InfoWrapper>
+                        <StyledInfoTitle>YEARS OF EXPERIENCE :</StyledInfoTitle>
+                        <SubText>3</SubText>
+                    </InfoWrapper>
+                    <StyledContainer>
+                        <StyledTitle>Education</StyledTitle>
+                    </StyledContainer>
+                    <InfoWrapper>
+                        <StyledInfoTitle>ACADEMIC QUALIFICATION : </StyledInfoTitle>
+                        <SubText>Degree</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>CGPA :</StyledInfoTitle>
+                        <SubText>3.75</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>INSTITUTION :</StyledInfoTitle>
+                        <SubText>University of Malaya</SubText>
+                    </InfoWrapper>
+                    <StyledContainer>
+                        <StyledTitle>Professional Summary</StyledTitle>
+                    </StyledContainer>
+                    <InfoWrapper>
+                        <StyledInfoTitle>STRENGTH :</StyledInfoTitle>
+                        <SubText>Diligent</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>WEAKNESS :</StyledInfoTitle>
+                        <SubText>-</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>GOAL :</StyledInfoTitle>
+                        <SubText>-</SubText>
+                    </InfoWrapper>
+                </StyledWrapper>
+
+                <StyledWrapper>
+                    <StyledContainer>
+                        <StyledTitle>Uploaded CV </StyledTitle>
+                    </StyledContainer>
+                </StyledWrapper>
             </StyledDiv>
         </div>
     );
