@@ -84,11 +84,11 @@ const StyledInfoTitle = styled.p`
     margin-bottom: 10px;
     margin-right: 10px;
 `;
-const StyledGrid = styled.div`
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 10px;
-`;
+// const StyledGrid = styled.div`
+//     display: grid;
+//     grid-template-columns: max-content 1fr;
+//     gap: 10px;
+// `;
 
 const InfoWrapper = styled.div`
     display: flex;
