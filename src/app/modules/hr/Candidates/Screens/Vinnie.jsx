@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { assets } from '../../../../platform/assets/assets';
 import { Button } from '@mui/material';
 import PlatformReusableStyles from '../../../../platform/Style/PlatformReusableStyles';
+import { Link } from 'react-router-dom';
 
 const StyledText = styled.p`
     font-weight: ${FONTWEIGHT.BOLD};
@@ -55,7 +56,7 @@ const ButtonsDiv = styled.div`
 `;
 
 const StyledButton = styled(Button)`
-    flex-grow: 1; /* Make the buttons fill the available horizontal space */
+    flex-grow: 1;
 `;
 
 const StyledTitle = styled.p`
@@ -89,7 +90,8 @@ const InfoWrapper = styled.div`
     display: flex;
     flex-direction: row;
 `;
-export default function Candidates() {
+
+export default function Vinnie() {
     return (
         <div>
             <StyledDiv>
@@ -120,9 +122,15 @@ export default function Candidates() {
             </StyledDiv>
             <StyledDiv>
                 <ButtonsDiv>
-                    <StyledButton style={PlatformReusableStyles.PrimaryButtonStyles}>Summary</StyledButton>
-                    <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>Interview</StyledButton>
-                    <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>AI Reports</StyledButton>
+                    <Link to="/hr/candidates">
+                        <StyledButton style={PlatformReusableStyles.PrimaryButtonStyles}>Summary</StyledButton>
+                    </Link>
+                    <Link to="/hr/candidate/interview">
+                        <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>Interview</StyledButton>
+                    </Link>
+                    <Link to="/hr/candidate/report">
+                        <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>AI Reports</StyledButton>
+                    </Link>
                 </ButtonsDiv>
             </StyledDiv>
             <StyledDiv>
