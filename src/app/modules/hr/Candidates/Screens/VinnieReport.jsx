@@ -122,7 +122,7 @@ export default function VinnieReport() {
             </StyledDiv>
             <StyledDiv>
                 <ButtonsDiv>
-                    <Link to="/hr/candidates">
+                    <Link to="/hr/candidate/Vinnie Tiang">
                         <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>Summary</StyledButton>
                     </Link>
                     <Link to="/hr/candidate/interview">
