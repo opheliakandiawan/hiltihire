@@ -8,18 +8,8 @@ import Select from '@mui/material/Select';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-// import Card from '@mui/material/Card';
-// import Select from '@mui/material/Select';
-// import CardMedia from '@mui/material/CardMedia';
-// import CardContent from '@mui/material/CardContent';
 import FONTSIZE from '../../../../platform/Style/FontSize.js';
 import FONTWEIGHT from '../../../../platform/Style/FontWeight.js';
-// import MenuItem from '@mui/material/MenuItem';
-// import Autocomplete from '@mui/material/Autocomplete';
-// import Box from '@mui/material/Box';
-// import TextField from '@mui/material/TextField';
-// import { FormControl } from '@mui/material';
-// import InputLabel from '@mui/material/InputLabel';
 
 export default function Candidates() {
     const StyledDiv = styled.div`
