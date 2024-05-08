@@ -8,24 +8,31 @@ import Select from '@mui/material/Select';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-// import Card from '@mui/material/Card';
-// import Select from '@mui/material/Select';
-// import CardMedia from '@mui/material/CardMedia';
-// import CardContent from '@mui/material/CardContent';
 import FONTSIZE from '../../../../platform/Style/FontSize.js';
 import FONTWEIGHT from '../../../../platform/Style/FontWeight.js';
-// import MenuItem from '@mui/material/MenuItem';
-// import Autocomplete from '@mui/material/Autocomplete';
-// import Box from '@mui/material/Box';
-// import TextField from '@mui/material/TextField';
-// import { FormControl } from '@mui/material';
-// import InputLabel from '@mui/material/InputLabel';
+import { Grid, Card, CardContent } from '@mui/material';
+import CandidatesData from '../Data/CandidatesData.json';
+import { CardActionArea } from '@mui/material';
+import CardMedia from '@mui/material/CardMedia';
 
 export default function Candidates() {
     const StyledDiv = styled.div`
         display: flex;
         flex-direction: column;
         width: 100%;
+    `;
+
+    const StyledName = styled.p`
+        font-size: ${FONTSIZE.medium};
+        font-weight: ${FONTWEIGHT.SEMI_BOLD};
+    `;
+    const FilterDiv = styled.div`
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: ${FONTSIZE.small};
+        font-weight: ${FONTWEIGHT.REGULAR};
+        margin: 0.5rem 0;
     `;
 
     const [experienceLevel, setExperienceLevel] = React.useState('');
@@ -46,20 +53,11 @@ export default function Candidates() {
         setJobType(event.target.value);
     };
 
-    const Sort = styled.div`
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        font-size: ${FONTSIZE.small};
-        font-weight: ${FONTWEIGHT.REGULAR};
-        margin: 0.5rem 0;
-    `;
-
     return (
         <StyledDiv>
             <SearchField />
 
-            <Sort>
+            <FilterDiv>
                 {/* country */}
                 <Autocomplete
                     id="country-select"
@@ -175,13 +173,37 @@ export default function Candidates() {
                         <MenuItem value="part-time">Part-time</MenuItem>
                     </Select>
                 </FormControl>
-            </Sort>
-            {/* 
-                
-            <Card>
-                <CardMedia></CardMedia>
-                <CardContent></CardContent>
-            </Card> */}
+            </FilterDiv>
+
+            <Grid
+                container
+                spacing={2}
+                marginTop={1}
+            >
+                {CandidatesData.map((result, index) => (
+                    <Grid
+                        item
+                        sm={4}
+                        xs={12}
+                        ms={4}
+                        key={index}
+                    >
+                        <Card sx={{ maxWidth: 345 }}>
+                            <CardActionArea>
+                                <CardMedia
+                                    component="img"
+                                    height="200"
+                                    image={result.img}
+                                    alt="candidate-profile-photo"
+                                />
+                                <CardContent>
+                                    <StyledName>{result.name}</StyledName>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+                ))}
+            </Grid>
         </StyledDiv>
     );
 }

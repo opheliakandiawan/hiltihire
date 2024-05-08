@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Vinnie Tiang",
+        "img": "../../../../../../public/profile-pic-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Emily Chia",
+        "img": "../../../../../../public/profile-pic-2.png"
+    },
+    {
+        "id": 3,
+        "name": "Samantha Lee",
+        "img": "../../../../../../public/profile-pic-3.png"
+    },
+    {
+        "id": 4,
+        "name": "Eric Chou",
+        "img": "../../../../../../public/profile-pic-4.png"
+    },
+    {
+        "id": 5,
+        "name": "Adam Alen",
+        "img": "../../../../../../public/profile-pic-5.png"
+    },
+    {
+        "id": 6,
+        "name": "Eugene Lim",
+        "img": "../../../../../../public/profile-pic-6.png"
+    }
+]
