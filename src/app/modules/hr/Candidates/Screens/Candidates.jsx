@@ -14,6 +14,7 @@ import { Grid, Card, CardContent } from '@mui/material';
 import CandidatesData from '../Data/CandidatesData.json';
 import { CardActionArea } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
+import { Link } from 'react-router-dom';
 
 export default function Candidates() {
     const StyledDiv = styled.div`
@@ -188,19 +189,24 @@ export default function Candidates() {
                         ms={4}
                         key={index}
                     >
-                        <Card sx={{ maxWidth: 345 }}>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="200"
-                                    image={result.img}
-                                    alt="candidate-profile-photo"
-                                />
-                                <CardContent>
-                                    <StyledName>{result.name}</StyledName>
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
+                        <Link
+                            to={`/hr/candidate/${result.name}`}
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Card sx={{ maxWidth: 345 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="200"
+                                        image={result.img}
+                                        alt="candidate-profile-photo"
+                                    />
+                                    <CardContent>
+                                        <StyledName>{result.name}</StyledName>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </Link>
                     </Grid>
                 ))}
             </Grid>

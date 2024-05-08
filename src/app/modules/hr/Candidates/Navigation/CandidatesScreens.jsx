@@ -8,12 +8,11 @@ const CandidatesScreens = (
     <>
         <Route
             path="/hr/candidates"
-            // element={<Candidates />}
-            element={<Vinnie />}
+            element={<Candidates />}
         />
 
         <Route
-            path="/hr/candidate/Vinnie"
+            path="/hr/candidate/Vinnie Tiang"
             element={<Vinnie />}
         />
         <Route
