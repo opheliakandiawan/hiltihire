@@ -45,6 +45,8 @@ const SubText = styled.p`
 
 const HorizontalSpacing = styled.div`
     margin-right: 50px;
+    justify-content: center;
+    display: flex;
 `;
 
 const ButtonsDiv = styled.div`
@@ -73,9 +75,10 @@ const StyledWrapper = styled.div`
 const StyledContainer = styled.div`
     background-color: black;
     padding: 10px;
-    display: inline-block;
+    display: flex;
     border-radius: 8px;
     margin-top: 10px;
+    justify-content: center;
 `;
 
 const StyledInfoTitle = styled.p`

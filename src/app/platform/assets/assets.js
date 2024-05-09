@@ -3,6 +3,7 @@ import vinnie_horizontal from './vinnie-horizontal.jpeg';
 import profile_phone from './Phone.png';
 import profile_email from './Email.png';
 import vinnie_resume from './vinnie-resume.png';
+import vinnie_video from './vinnie-video.mp4';
 
 export const assets = {
     vinnie_photo,
@@ -10,4 +11,5 @@ export const assets = {
     profile_phone,
     profile_email,
     vinnie_resume,
+    vinnie_video,
 };

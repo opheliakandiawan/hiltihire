@@ -12,7 +12,7 @@ const StyledText = styled.p`
 
 const StyledDiv = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 300;
 `;
 const StyledImage = styled.img`
@@ -43,6 +43,12 @@ const SubText = styled.p`
     display: inline-block;
 `;
 
+const SubTextQuestion = styled.p`
+    font-weight: ${FONTWEIGHT.BOLD};
+    margin-top: 10px;
+    display: inline-block;
+`;
+
 const HorizontalSpacing = styled.div`
     margin-right: 50px;
 `;
@@ -60,22 +66,8 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledTitle = styled.p`
-    color: white;
+    color: black;
     font-weight: ${FONTWEIGHT.BOLD};
-`;
-
-const StyledWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding-right: 50px;
-`;
-
-const StyledContainer = styled.div`
-    background-color: black;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 8px;
-    margin-top: 10px;
 `;
 
 const StyledInfoTitle = styled.p`
@@ -88,7 +80,32 @@ const StyledInfoTitle = styled.p`
 
 const InfoWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+`;
+
+const StyledVideo = styled.video`
+    max-width: 100%;
+    padding-bottom: 10px;
+`;
+
+const VideoWrapper = styled.div`
+    flex: 1;
+    align-items: flex-start;
+    margin-right: 20px;
+`;
+
+const TranscriptWrapper = styled.div`
+    flex: 1;
+`;
+
+const NoteInput = styled.textarea`
+    width: 95%;
+    height: 100px;
+    resize: vertical;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 `;
 
 export default function VinnieInterview() {
@@ -132,6 +149,63 @@ export default function VinnieInterview() {
                         <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>AI Reports</StyledButton>
                     </Link>
                 </ButtonsDiv>
+            </StyledDiv>
+            <StyledDiv>
+                <VideoWrapper>
+                    <StyledVideo
+                        src={assets.vinnie_video}
+                        controls
+                    ></StyledVideo>
+                    <StyledTitle>Notes:</StyledTitle>
+                    <NoteInput placeholder="Type your notes here"></NoteInput>
+                </VideoWrapper>
+                <TranscriptWrapper>
+                    <StyledTitle>Transcript:</StyledTitle>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:00</StyledInfoTitle>
+                        <SubTextQuestion>
+                            Can you describe your approach to designing user interfaces that prioritize both
+                            functionality and aesthetics ?
+                        </SubTextQuestion>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:12</StyledInfoTitle>
+                        <SubText>
+                            In crafting user interfaces that seamlessly integrate functionality and aesthetics,
+                        </SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:16</StyledInfoTitle>
+                        <SubText>my approach centers on a comprehensive understanding of user experience.</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:20</StyledInfoTitle>
+                        <SubTextQuestion>
+                            Can you walk us through your design process and how you approach a new project?
+                        </SubTextQuestion>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:26</StyledInfoTitle>
+                        <SubText>
+                            Absolutely. My design process typically starts with understanding the project requirements
+                            and user needs
+                        </SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:32</StyledInfoTitle>
+                        <SubText>through research and stakeholder interviews.</SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:36</StyledInfoTitle>
+                        <SubText>Once I have a clear understanding of the goals and target audience, </SubText>
+                    </InfoWrapper>
+                    <InfoWrapper>
+                        <StyledInfoTitle>00:40</StyledInfoTitle>
+                        <SubText>
+                            I move on to wireframing and prototyping to explore different layout options and user flows
+                        </SubText>
+                    </InfoWrapper>
+                </TranscriptWrapper>
             </StyledDiv>
         </div>
     );
