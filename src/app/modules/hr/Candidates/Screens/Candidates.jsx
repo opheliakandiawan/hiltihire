@@ -30,10 +30,16 @@ export default function Candidates() {
     const FilterDiv = styled.div`
         display: flex;
         gap: 10px;
+        flex: 1;
+        flex-grow: 1;
         align-items: center;
         font-size: ${FONTSIZE.small};
         font-weight: ${FONTWEIGHT.REGULAR};
         margin: 0.5rem 0;
+
+        & > * {
+            width: 100%;
+        }
     `;
 
     const [experienceLevel, setExperienceLevel] = React.useState('');
@@ -61,8 +67,9 @@ export default function Candidates() {
             <FilterDiv>
                 {/* country */}
                 <Autocomplete
+                    autoWidth
+                    sx={{ minWidth: 150 }}
                     id="country-select"
-                    sx={{ width: 300 }}
                     size="small"
                     options={countries}
                     autoHighlight
@@ -97,7 +104,8 @@ export default function Candidates() {
 
                 {/* experience level */}
                 <FormControl
-                    sx={{ width: 300, minWidth: 120 }}
+                    autoWidth
+                    sx={{ minWidth: 200 }}
                     size="small"
                 >
                     <InputLabel id="experience-level-select">Experience level</InputLabel>
@@ -117,7 +125,8 @@ export default function Candidates() {
 
                 {/* Department */}
                 <FormControl
-                    sx={{ width: 180, minWidth: 120 }}
+                    autoWidth
+                    sx={{ minWidth: 120 }}
                     size="small"
                 >
                     <InputLabel id="department-select">Department</InputLabel>
@@ -138,7 +147,8 @@ export default function Candidates() {
 
                 {/* CGPA */}
                 <FormControl
-                    sx={{ width: 180, minWidth: 120 }}
+                    autoWidth
+                    sx={{ minWidth: 120 }}
                     size="small"
                 >
                     <InputLabel id="cgpa-select">CGPA</InputLabel>
@@ -158,7 +168,8 @@ export default function Candidates() {
 
                 {/* Job Type */}
                 <FormControl
-                    sx={{ width: 180, minWidth: 120 }}
+                    autoWidth
+                    sx={{ minWidth: 120 }}
                     size="small"
                 >
                     <InputLabel id="job-type-select">Job Type</InputLabel>
