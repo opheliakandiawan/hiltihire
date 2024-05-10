@@ -14,6 +14,7 @@ const StyledDiv = styled.div`
     display: flex;
     align-items: flex-start;
     padding: 300;
+    width: 100%;
 `;
 const StyledImage = styled.img`
     margin-right: 20px;
@@ -55,6 +56,9 @@ const ButtonsDiv = styled.div`
     gap: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    & > * {
+        width: 100%;
+    }
 `;
 
 const StyledButton = styled(Button)`
@@ -126,13 +130,28 @@ export default function Vinnie() {
             <StyledDiv>
                 <ButtonsDiv>
                     <Link to="/hr/candidate/Vinnie Tiang">
-                        <StyledButton style={PlatformReusableStyles.PrimaryButtonStyles}>Summary</StyledButton>
+                        <StyledButton
+                            sx={{ flex: 1 }}
+                            style={PlatformReusableStyles.PrimaryButtonStyles}
+                        >
+                            Summary
+                        </StyledButton>
                     </Link>
                     <Link to="/hr/candidate/interview">
-                        <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>Interview</StyledButton>
+                        <StyledButton
+                            sx={{ flex: 1 }}
+                            style={PlatformReusableStyles.BlackOutlineButtonStyles}
+                        >
+                            Interview
+                        </StyledButton>
                     </Link>
                     <Link to="/hr/candidate/report">
-                        <StyledButton style={PlatformReusableStyles.BlackOutlineButtonStyles}>AI Reports</StyledButton>
+                        <StyledButton
+                            sx={{ flex: 1 }}
+                            style={PlatformReusableStyles.BlackOutlineButtonStyles}
+                        >
+                            AI Reports
+                        </StyledButton>
                     </Link>
                 </ButtonsDiv>
             </StyledDiv>
