@@ -12,7 +12,7 @@ const StyledText = styled.p`
 
 const StyledDiv = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 300;
 `;
 const StyledImage = styled.img`

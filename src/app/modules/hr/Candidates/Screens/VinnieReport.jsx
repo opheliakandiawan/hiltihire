@@ -43,6 +43,12 @@ const SubText = styled.p`
     display: inline-block;
 `;
 
+const SentimentText = styled.p`
+    font-size: 22px;
+    font-weight: ${FONTWEIGHT.BOLD};
+    color: #00ff00;
+    margin-top: 8px;
+`;
 const HorizontalSpacing = styled.div`
     margin-right: 50px;
 `;
@@ -60,7 +66,6 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledTitle = styled.p`
-    color: white;
     font-weight: ${FONTWEIGHT.BOLD};
 `;
 
@@ -70,25 +75,10 @@ const StyledWrapper = styled.div`
     padding-right: 50px;
 `;
 
-const StyledContainer = styled.div`
-    background-color: black;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 8px;
-    margin-top: 10px;
-`;
-
-const StyledInfoTitle = styled.p`
-    font-weight: ${FONTWEIGHT.BOLD};
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-`;
-
 const InfoWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: start;
 `;
 
 export default function VinnieReport() {
@@ -132,6 +122,16 @@ export default function VinnieReport() {
                         <StyledButton style={PlatformReusableStyles.PrimaryButtonStyles}>AI Reports</StyledButton>
                     </Link>
                 </ButtonsDiv>
+            </StyledDiv>
+            <StyledDiv>
+                <img
+                    src={assets.bot}
+                    alt=""
+                />
+                <InfoWrapper>
+                    <StyledTitle>Overall Sentiment</StyledTitle>
+                    <SentimentText>Positive</SentimentText>
+                </InfoWrapper>
             </StyledDiv>
         </div>
     );
