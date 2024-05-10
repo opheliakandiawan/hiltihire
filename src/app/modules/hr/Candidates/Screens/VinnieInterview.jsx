@@ -66,7 +66,6 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledTitle = styled.p`
-    color: black;
     font-weight: ${FONTWEIGHT.BOLD};
 `;
 
