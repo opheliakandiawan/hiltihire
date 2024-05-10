@@ -23,8 +23,8 @@ export default class PlatformReusableStyles {
     };
 
     static BlackOutlineButtonStyles = {
-        color: COLORS.red,
-        border: `1px solid ${COLORS.red}`,
+        color: COLORS.black,
+        border: `1px solid ${COLORS.black}`,
         fontWeight: FONTWEIGHT.SEMI_BOLD,
         padding: '0.5rem 1rem',
     };
